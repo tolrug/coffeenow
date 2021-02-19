@@ -1,0 +1,31 @@
+{
+  "drinks": [
+    {
+      "id": 1,
+      "name": "Cappuccino"
+    },
+    {
+      "id": 2,
+      "name": "Flat White"
+    },
+    {
+      "id": 3,
+      "name": "Americano"
+    }
+  ],
+  "groups": [
+    {
+      "id": 1,
+      "name": "Test Group"
+    }
+  ],
+  "orders": [
+    {
+      "id": 1,
+      "coffee": 3,
+      "size": "Large",
+      "milk": "full cream",
+      "group": 1
+    }
+  ]
+}
