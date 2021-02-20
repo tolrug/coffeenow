@@ -77,21 +77,18 @@ function App() {
         console.error("Error: ", error);
       });
 
-    console.log(groups);
+    setInGroup(true);
   };
 
   return (
     <div>
       <Header />
-      <JoinForm onAdd={addGroup} />
-      {groups.map((group) => (
-        <p key={group.id}>{group.name}</p>
-      ))}
+      {!inGroup ? (
+        <JoinForm onAdd={addGroup} />
+      ) : (
+        <Drinks drinks={drinks} onAdd={addOrder} />
+      )}
     </div>
-    // <div className="App">
-    //   <Header />
-    //   <Drinks drinks={drinks} onAdd={addOrder} />
-    // </div>
   );
 }
 
