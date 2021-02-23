@@ -1,8 +1,7 @@
 import { useState } from "react";
 
-const JoinForm = ({ onAdd }) => {
+const CreateForm = ({ onAdd }) => {
   const [groupName, setGroupName] = useState("");
-  const [name, setName] = useState("");
 
   const onSubmit = (e) => {
     e.preventDefault();
@@ -12,30 +11,14 @@ const JoinForm = ({ onAdd }) => {
       return;
     }
 
-    if (!name) {
-      alert("Please enter a valid name");
-      return;
-    }
+    onAdd(groupName);
 
-    onAdd({ groupName, name });
-
-    setGroupName("");
-    setName("");
+    setGroupName([""]);
   };
 
   return (
     <form className="form" onSubmit={onSubmit}>
-      <h2>Join Group</h2>
-      <label htmlFor="name">Name: </label>
-      <br />
-      <input
-        type="text"
-        id="name"
-        value={name}
-        onChange={(e) => setName(e.target.value)}
-      />
-      <br />
-
+      <h2>Create Group</h2>
       <label htmlFor="group-name">Group Name: </label>
       <br />
       <input
@@ -46,9 +29,9 @@ const JoinForm = ({ onAdd }) => {
       />
       <br />
 
-      <input type="submit" value="Join" />
+      <input type="submit" value="Create" />
     </form>
   );
 };
 
-export default JoinForm;
+export default CreateForm;

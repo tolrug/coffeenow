@@ -30,3 +30,22 @@ input,
 select {
   width: 100px;
 }
+
+.forms {
+  display: flex;
+  justify-content: center;
+}
+
+.form {
+  border: 1px solid black;
+  margin: 0 20px;
+  text-align: center;
+  padding: 10px;
+  border-radius: 6px;
+  width: 10em;
+}
+
+form input,
+form select {
+  margin-bottom: 6px;
+}

@@ -16,39 +16,13 @@
   "groups": [
     {
       "id": 1,
-      "name": "Test Group"
-    },
-    {
-      "name": "8765432",
-      "id": 9
-    },
-    {
-      "name": "tessssss",
-      "id": 10
-    },
-    {
-      "name": "tessssss754",
-      "id": 11
-    },
-    {
       "name": "test1",
-      "id": 12
-    },
-    {
-      "name": "anotheg",
-      "id": 13
-    },
-    {
-      "name": "andanother",
-      "id": 14
-    },
-    {
-      "name": "test12",
-      "id": 15
-    },
-    {
-      "name": "qwerthj",
-      "id": 16
+      "members": [
+        "user1",
+        "user2",
+        "trdes",
+        "ojuhgfd"
+      ]
     }
   ],
   "orders": [
@@ -57,7 +31,8 @@
       "coffee": 3,
       "size": "Large",
       "milk": "full cream",
-      "group": 1
+      "group": 1,
+      "name": "Kaleb"
     }
   ]
 }

@@ -37,6 +37,7 @@ const AddDrink = ({ drink, onAdd }) => {
       </select>
       <br />
       <label htmlFor="milk">Milk: </label>
+      <br />
       <input
         type="text"
         id={drink.id}

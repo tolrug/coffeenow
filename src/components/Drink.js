@@ -32,7 +32,7 @@ const Drink = ({ drink, onAdd }) => {
         <h3>{drink.name}</h3>
         <img
           src={require("../images/" + drink.name + ".png").default}
-          alt="new"
+          alt={drink.name}
           width="100px"
           height="100px"
         />
